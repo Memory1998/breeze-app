@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "breeze-app",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "imgs/home.png",
+      "selectedIconPath": "imgs/home-hover.png"
+    }, {
+      "pagePath": "pages/me/index",
+      "text": "我的",
+      "iconPath": "imgs/me.png",
+      "selectedIconPath": "imgs/me-hover.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
