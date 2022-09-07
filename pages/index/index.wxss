@@ -1,1 +1,18 @@
-/* pages/index/index.wxss */
+.wrapper {
+  height: 100vh;
+  background: darkgray;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.wrapper .swiper-item {
+  background: rgb(78, 67, 63);
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper .van-row{
+  margin: 1vh;
+}

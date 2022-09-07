@@ -1,2 +1,28 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="wrapper">
+  <view class="swiper">
+    <swiper indicator-dots="true" autoplay="true" interval="1000" duration="1000">
+      <block wx:for="{{swiper}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item"></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <van-row>
+    <van-col span="24">
+      <van-grid gutter="{{10}}" clickable direction="horizontal" column-num="2">
+        <van-grid-item url="/pages/flowable/index" link-type="navigateTo" icon="photo-o" text="工作流" />
+        <van-grid-item url="/pages/flowable/index" link-type="navigateTo" icon="photo-o" text="文字" />
+      </van-grid>
+    </van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="24">
+      <van-grid gutter="{{ 10 }}">
+        <van-grid-item icon="photo-o" text="文字" wx:for="{{ 8 }}" wx:key="key" />
+      </van-grid>
+    </van-col>
+  </van-row>
+</view>
