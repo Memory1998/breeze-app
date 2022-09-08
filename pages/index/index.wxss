@@ -14,5 +14,5 @@
 }
 
 .wrapper .van-row{
-  margin: 1vh;
+  margin: 2.5vh;
 }

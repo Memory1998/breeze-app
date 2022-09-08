@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/me/index",
-    "pages/flowable/index"
+    "pages/flowable/index",
+    "pages/waitinghandling/index",
+    "pages/check/index",
+    "pages/msg/index"
   ],
   "window": {
     "navigationBarTitleText": "breeze-app",
@@ -13,8 +16,8 @@
   "tabBar": {
     "list": [
       {
-        "pagePath":"pages/flowable/index",
-        "text": "任务",
+        "pagePath": "pages/msg/index",
+        "text": "消息",
         "iconPath": "imgs/home.png",
         "selectedIconPath": "imgs/home-hover.png"
       },

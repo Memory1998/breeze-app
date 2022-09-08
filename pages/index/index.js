@@ -7,5 +7,11 @@ Page({
     }, {
       img: ""
     }]
+  },
+  to(event){
+    console.log(event)
+    wx.navigateTo({
+      url: '/pages/check/index',
+    })
   }
 })
