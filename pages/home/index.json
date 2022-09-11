@@ -4,10 +4,9 @@
     "van-grid-item": "@vant/weapp/grid-item/index",
     "van-row": "@vant/weapp/row/index",
     "van-col": "@vant/weapp/col/index",
-    "van-notice-bar": "@vant/weapp/notice-bar/index",
-    "van-divider": "@vant/weapp/divider/index"
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
   },
-  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarBackgroundColor": "#fff",
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "主页",
   "backgroundColor": "#eeeeee",

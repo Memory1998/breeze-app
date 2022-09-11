@@ -1,6 +1,7 @@
-{
-  "pages": [
-    "pages/index/index",
+{ 
+    "pages": [
+    "pages/login/index",
+    "pages/home/index",
     "pages/me/index",
     "pages/flowable/index",
     "pages/waitinghandling/index",
@@ -8,21 +9,24 @@
     "pages/msg/index"
   ],
   "window": {
-    "navigationBarTitleText": "breeze-app",
+    "navigationBarTitleText": "清风",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#eee",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor":"#1989fa",
+    "color": "#bfbfbf",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/msg/index",
-        "text": "消息",
-        "iconPath": "imgs/home.png",
-        "selectedIconPath": "imgs/home-hover.png"
+        "text": "通知",
+        "iconPath": "imgs/msg.png",
+        "selectedIconPath" :"imgs/msg-hover.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/index",
         "text": "首页",
         "iconPath": "imgs/home.png",
         "selectedIconPath": "imgs/home-hover.png"

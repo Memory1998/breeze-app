@@ -1,6 +1,5 @@
 .wrapper {
   height: 100vh;
-  background: darkgray;
 }
 
 .swiper {
@@ -15,4 +14,5 @@
 
 .wrapper .van-row{
   margin: 2.5vh;
+  /* background: chartreuse; */
 }
