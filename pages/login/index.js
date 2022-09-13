@@ -2,7 +2,7 @@ import request from '../../utils/request'
 Page({
   data: {
     username: "admin",
-    password: '1234561',
+    password: '123456',
     showornot: 'password',
     show: true,
   },
@@ -28,11 +28,7 @@ Page({
       username: this.data.username,
       password: this.data.password
     };
-    let login = await request(
-      "/admin/token",
-      "POST",
-      data
-    )
+    let login = await request("/admin/token", "POST", data)
     console.log(login)
     this.toHome();
   },
