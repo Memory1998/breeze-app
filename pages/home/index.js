@@ -8,6 +8,8 @@ Page({
       img: ""
     }]
   },
+  onLoad(){
+  },
   to(event){
     console.log(event)
     wx.navigateTo({

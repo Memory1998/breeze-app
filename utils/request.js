@@ -40,7 +40,7 @@ export default (url, method, data = {}, header) => {
             duration: 2000
           })
         } else if (res.statusCode == 200) {
-          resolve(res);
+        resolve(res.data);
         } else {
           // 请求异常
           wx.showToast({

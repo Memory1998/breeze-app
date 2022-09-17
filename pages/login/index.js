@@ -1,36 +1,37 @@
 import request from '../../utils/request'
+
 Page({
   data: {
     username: "admin",
     password: '123456',
-    showornot: 'password',
+    showPassword: true,
     show: true,
   },
   showPassword() {
-    debugger
-    this.submit()
-    //   this.setData({
-    //     show: !this.data.show
-    //   })
-    //   if (this.data.show === true) {
-    //     this.setData({
-    //       showornot: 'password'
-    //     })
-    //   } else {
-    //     this.setData({
-    //       showornot: 'text',
-    //       password: this.data.password
-    //     });
-    //   }
+    this.setData({
+      show: !this.data.show
+    })
+    if (this.data.show === true) {
+      this.setData({
+        showPassword: true
+      })
+    } else {
+      this.setData({
+        showPassword: false,
+        password: this.data.password
+      });
+    }
   },
   async submit() {
     var data = {
       username: this.data.username,
       password: this.data.password
     };
-    let login = await request("/admin/token", "POST", data)
-    console.log(login)
-    this.toHome();
+    let resp = await request("/admin/token", "POST", data)
+    if (resp.code === 1) {
+      this.toHome()
+      return
+    }
   },
   toHome() {
     wx.reLaunch({

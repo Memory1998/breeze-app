@@ -1,13 +1,15 @@
 <view class="wrapper">
   <view class="login">
+    <view class="avatar">
+      <van-image round width="5rem" height="5rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    </view>
     <van-cell-group>
       <van-field size="large" model:value="{{username}}" name="用户名" label="" placeholder="用户名" :rules="[{ required: true, message: '请填写用户名' }]" left-icon="user-o" />
-      <van-field size="large" model:value="{{password}}" type="{{showornot}}" name="密码" label="" placeholder="密码" :rules="[{ required: true, message: '请填写密码' }]" left-icon="lock">
-        <!-- use-button-slot> -->
-        <!-- <span slot="button" size="small" bindtap="showPassword">
+      <van-field size="large" model:value="{{password}}" password="{{showPassword}}" name="密码" label="" placeholder="密码" :rules="[{ required: true, message: '请填写密码' }]" left-icon="lock" use-button-slot>
+        <span slot="button" size="small" bindtap="showPassword">
           <van-icon name="closed-eye" wx:if="{{ show }}" />
           <van-icon name="eye-o" wx:else />
-        </span> -->
+        </span>
       </van-field>
 
       <view style="margin: 18px auto; width: 96%;">
