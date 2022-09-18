@@ -1,1 +1,31 @@
-/* pages/msg/index.wxss */
+.van-swipe-cell__left,
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: inherit;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.van-swipe-cell {
+  height: 10vh;
+}
+
+.van-cell {
+  height: 10vh;
+}
+
+.van-cell__value,
+.van-cell__title {
+  display: flex;
+  align-items: center;
+}
+
+.van-cell__value {
+  justify-content: flex-end;
+}

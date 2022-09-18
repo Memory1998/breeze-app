@@ -1,7 +1,7 @@
 <view class="wrapper">
   <view class="login">
     <view class="avatar">
-      <van-image round width="5rem" height="5rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <van-image round width="5rem" height="5rem" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="cover" />
     </view>
     <van-cell-group>
       <van-field size="large" model:value="{{username}}" name="用户名" label="" placeholder="用户名" :rules="[{ required: true, message: '请填写用户名' }]" left-icon="user-o" />

@@ -11,7 +11,7 @@
   "window": {
     "navigationBarTitleText": "清风",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

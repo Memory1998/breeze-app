@@ -1,11 +1,62 @@
-// pages/msg/index.js
+import Dialog from '@vant/weapp/dialog/dialog';
+
 Page({
-
   /**
-   * 页面的初始数据
-   */
+  * 页面的初始数据
+  */
   data: {
+    msgList: [
+      {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }
+    ]
+  },
 
+  onClose(event) {
+    const { position, instance } = event.detail;
+    switch (position) {
+      case 'left':
+      case 'cell':
+        instance.close();
+        break;
+      case 'right':
+        Dialog.confirm({
+          message: '确定删除吗？',
+        }).then(() => {
+          instance.close();
+        });
+        break;
+    }
   },
 
   /**
