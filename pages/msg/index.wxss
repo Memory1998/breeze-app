@@ -1,3 +1,7 @@
+.scroll-view_H{
+  white-space: nowrap;
+}
+
 .van-swipe-cell__left,
 .van-swipe-cell__right {
   display: inline-block;

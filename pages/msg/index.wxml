@@ -1,9 +1,11 @@
 <view>
-  <van-swipe-cell wx:for="{{msgList}}" wx:for-item="msg" wx:key="id" id="swipe-cell" right-width="{{ 65 }}" async-close bind:close="onClose">
-    <van-cell-group>
-      <van-cell title="{{msg.title}}" value="{{msg.value}}" />
-    </van-cell-group>
-    <view slot="right">删除</view>
-  </van-swipe-cell>
+  <scroll-view scroll-y="true" style="height: 100vh;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <van-swipe-cell wx:for="{{msgList}}" wx:for-item="msg" wx:key="id" id="swipe-cell" right-width="{{ 65 }}" async-close bind:close="onClose">
+      <van-cell-group>
+        <van-cell title="{{msg.title}}" value="{{msg.value}}" />
+      </van-cell-group>
+      <view slot="right">删除</view>
+    </van-swipe-cell>
+  </scroll-view>
   <van-dialog id="van-dialog" />
 </view>

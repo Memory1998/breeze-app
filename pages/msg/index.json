@@ -6,5 +6,10 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-dialog": "@vant/weapp/dialog/index"
   },
-  "navigationBarTitleText": "通知"
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "通知",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
 }

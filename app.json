@@ -11,6 +11,7 @@
   "window": {
     "navigationBarTitleText": "清风",
     "backgroundTextStyle": "light",
+    "backgroundColor": "#fff",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black"
   },

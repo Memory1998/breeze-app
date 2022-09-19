@@ -27,7 +27,7 @@ Page({
       username: this.data.username,
       password: this.data.password
     };
-    let resp = await request("/admin/token", "POST", data)
+    let resp = await request("/token", "POST", data)
     if (resp.code === 1) {
       this.toHome()
       return

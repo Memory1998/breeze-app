@@ -1,12 +1,35 @@
 import Dialog from '@vant/weapp/dialog/dialog';
 
 Page({
+  onPullDownRefresh: function() {
+    // Do something when pull down.
+  },
   /**
   * 页面的初始数据
   */
   data: {
     msgList: [
       {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
+        id: 1,
+        title: '你好',
+        value: '1'
+      }, {
         id: 1,
         title: '你好',
         value: '1'
